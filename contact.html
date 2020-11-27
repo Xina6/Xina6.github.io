@@ -147,15 +147,60 @@
                     <p><b>Subscribe to our newsletter</b></p>
                     <div class="subscribe-form">
                         <div class="form-group">
+						<form method="POST" action="subscribe.php">
                             <input type="email" id="email" class="form-control" placeholder="Email" required>
-                            <input type="submit" id="aboneaza" value="Subscribe" class="mt-2">
-                        </div>
+                            <input type="submit" name="Email" value="Subscribe" class="mt-2" type="submit" name="Submit">
+                        </form>
+						</div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+<script
+$(document).ready(function(){
 
+      $(document).on('click', '#contact', function(){
+        var email = $('#email').val();
+        var nume = $('#nume').val();
+        var subiect = $('#subiect').val();
+        var mesaj = $('#mesaj').val();
+        $.ajax({
+          url: '../backend/functions.php',
+          type: 'POST',
+          data: {
+            'contact': 1,
+            'email': email,
+            'nume': nume,
+            'subiect': subiect,
+            'mesaj': mesaj
+          },
+          success: function(response){
+            alert(response);
+            $('#email').val('');
+            $('#nume').val('');
+            $('#subiect').val('');
+            $('#mesaj').val('');
+          }
+        });
+      });
+
+      $(document).on('click', '#aboneaza', function(){
+        var email = $('#email').val();
+        $.ajax({
+          url: '../backend/functions.php',
+          type: 'POST',
+          data: {
+            'aboneaza': 1,
+            'email': email,
+          },
+          success: function(response){
+            alert(response);
+            $('#email').val('');
+          }
+        });
+      });
+    });
     <script>
         let map;
 

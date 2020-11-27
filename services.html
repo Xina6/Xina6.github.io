@@ -211,7 +211,7 @@
     </div>
     <!-- Modal 3-->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" style="margin-left: 25%; margin-right: 25%;">
+        <div class="modal-dialog" style="margin-left: 25%; margin-right: 15%;">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
                 </div>
@@ -233,7 +233,7 @@
     </div>
     <!-- Modal 4-->
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" style="margin-left: 25%; margin-right: 25%;">
+        <div class="modal-dialog" style="margin-left: 15%; margin-right: 15%;">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
                 </div>
@@ -276,11 +276,13 @@
                 </div>
                 <div class="col-lg-4 my-3 my-lg-0">
                     <p><b>Subscribe to our newsletter</b></p>
-                    <div class="subscribe-form">
+ <div class="subscribe-form">
                         <div class="form-group">
+						<form method="POST" action="subscribe.php">
                             <input type="email" id="email" class="form-control" placeholder="Email" required>
-                            <input type="submit" id="aboneaza" value="Subscribe" class="mt-2">
-                        </div>
+                            <input type="submit" name="Email" value="Subscribe" class="mt-2" type="submit" name="Submit">
+                        </form>
+						</div>
                     </div>
                 </div>
             </div>
