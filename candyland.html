@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7K9X3R19N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-J7K9X3R19N');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dark-mode/dark-mode.css">
+    <title>Candy Land</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="candyland.html">Candy Land</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ml-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Our story</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                            href="services.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <div class="custom-control custom-switch">
+                            <a class="nav-link js-scroll-trigger"><input type="checkbox" class="custom-control-input"
+                                    id="darkSwitch">
+                                <label class="custom-control-label" for="darkSwitch"><img src="poze/moon.png"
+                                        width="20px" height="auto"></label></a>
+                        </div>
+                        <script src="dark-mode/dark-mode-switch.min.js"></script>
+                    </li>
+                    <li>
+                        <div class="popup" onclick="myFunction()">
+                            <img src="assets/img/question.png" width="25px" height="auto">
+                            <span class="popuptext" id="myPopup">Each page has a suggestive name. For more information
+                                access <a href="contact.html">Contact</a> section</span>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+
+        <div class="container">
+            <div class="masthead-subheading" style="color: #9072db;">It's Nice To Meet You</div>
+            <div class="masthead-heading text-uppercase" style="color:#9072db;">Welcome To CandyLand!</div>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#presentation">GO!</a>
+        </div>
+        <div class='button_up' id='button_up' style='display:none;'></div>
+        <div class='button_down' id='button_down' style='display:none;'></div>
+    </header>
+
+    <section class="page-section" id="presentation">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Try the best experience in town!</h2><br><br>
+        </div>
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front" style="background-color: #FCEEE1;">
+                </div>
+                <div class="flip-box-back" style="border: 0;">
+                    <br><br>
+                    <p style="margin-left: 5%; margin-right: 5%; font-size: 1.5vw;" align="center">We think our
+                        sweets are the best in Timișoara. <br> Here’s why...freshly baked to order, our cupcakes are
+                        filled, piped, drizzled and swirled by hand using only the very best ingredients available.
+                        Looking for the perfect desserts for any ocassion? All our sweets can be personalised to make
+                        them extra special! </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="assets/img/header-bg.jpg"></div>
+
+    <section class="page-section" id="presentation">
+        <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <picture>
+                        <img src="poze/images3.jpeg" alt="responsive image" class="d-block img-fluid">
+                    </picture>
+                    </a>
+                </div>
+                <!-- /.carousel-item -->
+                <div class="carousel-item">
+                    <picture>
+                        <img src="poze/images1.jpeg" alt="responsive image" class="d-block img-fluid">
+                    </picture>
+                    </a>
+                </div>
+                <!-- /.carousel-item -->
+                <div class="carousel-item">
+                    <picture>
+                        <img src="poze/images2.jpeg" alt="responsive image" class="d-block img-fluid">
+                    </picture>
+                    </a>
+                </div>
+                <!-- /.carousel-item -->
+            </div>
+            <!-- /.carousel-inner -->
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- /.carousel -->
+    </section>
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="assets/img/header-bg.jpg"></div>
+
+    <section class="page-section" id="presentation">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">What we offer you</h2><br><br>
+            </div>
+            <div class="row text-center">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="poze/index1.jpeg" alt="Avatar" style="width:25rem;height:20rem;">
+                        </div>
+                        <div class="flip-card-back">
+                            <br><br>
+                            <h1>About US</h1> <br><br>
+                            <p>If you do not trust us, we invite you to discover us</p>
+                            <br>
+                            <a href="about.html"><button class="btn btn-primary" type="button">
+                                    Some sweet info
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="poze/candy3.jpeg" alt="Avatar" style="width:25rem;height:20rem;">
+                        </div>
+                        <div class="flip-card-back">
+                            <br><br>
+                            <h1>Products</h1> <br>
+                            <p>In the meantime, read on to discover what makes our cakes and candy so special.</p>
+                            <br>
+                            <a href="products.html"><button class="btn btn-primary" type="button">
+                                    Lets see
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="poze/index1.jpeg" alt="Avatar" style="width:25rem;height:20rem;">
+                        </div>
+                        <div class="flip-card-back">
+                            <br><br>
+                            <h1>Contact</h1> <br>
+                            <p style="margin: 10px;">If you want more details or are interested in an order</p> <br>
+                            <a href="contact.html"><button class="btn btn-primary" type="button">
+                                    Contact US
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="assets/img/header-bg.jpg"></div>
+
+
+    <!-- Footer-->
+
+    <footer align="center" class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-left">
+                    <p><i class="fa fa-clock"></i> <a href="#!">Every day from 9 a.m. to 2 p.m.</a></p>
+                    <p><i class="fa fa-phone"></i> <a href="#!">+40 724 653 671</a></p>
+                    <p><i class="fa fa-map-marker"></i> <a href="#!">Splaiul Nicolae Titulescu, Timișoara</a></p>
+                </div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <p> Stay connected </p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+                    <br><br><br>
+                    <p> <b>Copyright © 2020 Cristina Peter </b> </p>
+                </div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <p><b>Subscribe to our newsletter</b></p>
+                    <div class="subscribe-form">
+                        <div class="form-group">
+						<form method="POST" action="subscribe.php">
+                            <input type="email" id="email" class="form-control" placeholder="Email" required>
+                            <input type="submit" name="Email" value="Subscribe" class="mt-2" type="submit" name="Submit">
+                        </form>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+    <style>
+        /* Popup container - can be anything you want */
+        .popup {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            padding-bottom: 10px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* The actual popup */
+        .popup .popuptext {
+            size: 3px;
+            visibility: hidden;
+            width: 250px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 40px 0;
+            position: absolute;
+            z-index: 1;
+            top: 100%;
+            left: 80%;
+            margin-left: -130px;
+        }
+
+        /* Popup arrow */
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            bottom: -100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        /* Toggle this class - hide and show the popup */
+        .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+
+
+    <script>
+
+        (function () {
+            var special = jQuery.event.special,
+                uid1 = 'D' + (+new Date()),
+                uid2 = 'D' + (+new Date() + 1);
+            special.scrollstart = {
+                setup: function () {
+                    var timer, handler = function (evt) {
+                        var _self = this,
+                            _args = arguments;
+                        if (timer) {
+                            clearTimeout(timer)
+                        } else {
+                            evt.type = 'scrollstart';
+                            jQuery.event.handle.apply(_self, _args)
+                        }
+                        timer = setTimeout(function () {
+                            timer = null
+                        }, special.scrollstop.latency)
+                    };
+                    jQuery(this).bind('scroll', handler).data(uid1, handler)
+                },
+                teardown: function () {
+                    jQuery(this).unbind('scroll', jQuery(this).data(uid1))
+                }
+            };
+            special.scrollstop = {
+                latency: 300,
+                setup: function () {
+                    var timer, handler = function (evt) {
+                        var _self = this,
+                            _args = arguments;
+                        if (timer) {
+                            clearTimeout(timer)
+                        }
+                        timer = setTimeout(function () {
+                            timer = null;
+                            evt.type = 'scrollstop';
+                            jQuery.event.handle.apply(_self, _args)
+                        }, special.scrollstop.latency)
+                    };
+                    jQuery(this).bind('scroll', handler).data(uid2, handler)
+                },
+                teardown: function () {
+                    jQuery(this).unbind('scroll', jQuery(this).data(uid2))
+                }
+            }
+        })();
+        (function () {
+            var special = jQuery.event.special,
+                uid1 = 'D' + (+new Date()),
+                uid2 = 'D' + (+new Date() + 1);
+            special.scrollstart = {
+                setup: function () {
+                    var timer, handler = function (evt) {
+                        var _self = this,
+                            _args = arguments;
+                        if (timer) {
+                            clearTimeout(timer)
+                        } else {
+                            evt.type = 'scrollstart';
+                            jQuery.event.handle.apply(_self, _args)
+                        }
+                        timer = setTimeout(function () {
+                            timer = null
+                        }, special.scrollstop.latency)
+                    };
+                    jQuery(this).bind('scroll', handler).data(uid1, handler)
+                },
+                teardown: function () {
+                    jQuery(this).unbind('scroll', jQuery(this).data(uid1))
+                }
+            };
+            special.scrollstop = {
+                latency: 300,
+                setup: function () {
+                    var timer, handler = function (evt) {
+                        var _self = this,
+                            _args = arguments;
+                        if (timer) {
+                            clearTimeout(timer)
+                        }
+                        timer = setTimeout(function () {
+                            timer = null;
+                            evt.type = 'scrollstop';
+                            jQuery.event.handle.apply(_self, _args)
+                        }, special.scrollstop.latency)
+                    };
+                    jQuery(this).bind('scroll', handler).data(uid2, handler)
+                },
+                teardown: function () {
+                    jQuery(this).unbind('scroll', jQuery(this).data(uid2))
+                }
+            }
+        })();
+
+        $(function () {
+            var $elem = $('body');
+            $('#button_up').fadeIn('slow');
+            $('#button_down').fadeIn('slow');
+            $(window).bind('scrollstart', function () {
+                $('#button_up,#button_down').stop().animate({
+                    'opacity': '0.2'
+                });
+            });
+            $(window).bind('scrollstop', function () {
+                $('#button_up,#button_down').stop().animate({
+                    'opacity': '1'
+                });
+            });
+            $('#button_down').click(
+
+                function (e) {
+                    $('html, body').animate({
+                        scrollTop: $elem.height()
+                    }, 800);
+                });
+            $('#button_up').click(
+
+                function (e) {
+                    $('html, body').animate({
+                        scrollTop: '0px'
+                    }, 800);
+                });
+        });
+
+        $(function () {
+            var content = ['<p>Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. Lorem Ipsum a fost macheta standard a industriei încă din secolul al XVI-lea, când un tipograf anonim a luat o planşetă de litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele respective.</p>', '<button class="btn btn-danger" onclick="stergere()">Sterge coockie-urile</button>'].join('');
+            $('[data-toggle="popover"]').popover({
+                content: content,
+                html: true
+            });
+        });
+
+        function search() {
+            let input = document.getElementById('searchbar').value
+            input = input.toLowerCase();
+            let x = document.getElementsByClassName('animals');
+
+            for (i = 0; i < x.length; i++) {
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display = "none";
+                }
+                else {
+                    x[i].style.display = "list-item";
+                }
+            }
+        } 
+    </script>
+
+    <script>
+        function Dark() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax/parallax.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
