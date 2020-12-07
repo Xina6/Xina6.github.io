@@ -5819,6 +5819,7 @@ a.close.disabled {
 .carousel-inner {
   position: relative;
   width: 100%;
+  max-height: 500px;
   overflow: hidden;
 }
 .carousel-inner::after {
@@ -5831,8 +5832,7 @@ a.close.disabled {
   position: relative;
   display: none;
   float: left;
-  height: 500px;
-  object-fit: fill; /*aici este car*/
+  object-fit: cover; /*aici este car*/
   width: 100%;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
