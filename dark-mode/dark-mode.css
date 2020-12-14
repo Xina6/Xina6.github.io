@@ -25,3 +25,7 @@
 [data-theme="dark"] .portfolio-caption {
 	  background-color: #000 !important;
 }
+
+[data-theme="dark"] .dswitch {
+	  content: url("../poze/sun.png") !important;
+}

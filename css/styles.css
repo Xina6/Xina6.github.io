@@ -10552,7 +10552,9 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 
 #myInput {
-  background-position: 10px 12px;
+
+  background-color: white;
+  background-position: 10px 10px;
   background-repeat: no-repeat;
   width: 100%;
   font-size: 16px;
@@ -10875,4 +10877,10 @@ div.transbox {
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+.dswitch {
+	content: url("../poze/moon.png");
+	width: 20px;
+	height: auto;
 }

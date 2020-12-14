@@ -105,8 +105,8 @@
             // ---------------------------------------------------------
             //                                                   PATTERN
             // ---------------------------------------------------------
-            if ($this.attr("pattern") !== undefined) {
-              message = "Not in the expected format<!-- data-validation-pattern-message to override -->";
+            if ($this.attr("pattern") !== undefined && $this.attr("type").toLowerCase() === "text" ) {
+              message = "Not in the expected format. Only letters accepted!<!-- data-validation-pattern-message to override -->";
               if ($this.data("validationPatternMessage")) {
                 message = $this.data("validationPatternMessage");
               }
@@ -172,7 +172,7 @@
             // ---------------------------------------------------------
             //                                                    NUMBER
             // ---------------------------------------------------------
-            if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "number") {
+            if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "tel") {
               message = settings.builtInValidators.number.message;
               if ($this.data("validationNumberMessage")) {
                 message = $this.data("validationNumberMessage");
@@ -183,7 +183,7 @@
             //                                                     EMAIL
             // ---------------------------------------------------------
             if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "email") {
-              message = "Not a valid email address<!-- data-validator-validemail-message to override -->";
+              message = "Not a valid email address. Example: abc@gmail.com<!-- data-validator-validemail-message to override -->";
               if ($this.data("validationValidemailMessage")) {
                 message = $this.data("validationValidemailMessage");
               } else if ($this.data("validationEmailMessage")) {
@@ -839,7 +839,7 @@
         name: "Number",
         type: "regex",
         regex: "([+-]?\\\d+(\\\.\\\d*)?([eE][+-]?[0-9]+)?)?",
-        message: "Must be a number<!-- data-validator-number-message to override -->"
+        message: "Not in the expected format. Only digits accepted!<!-- data-validator-number-message to override -->"
       },
       integer: {
         name: "Integer",
